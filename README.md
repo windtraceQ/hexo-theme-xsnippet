@@ -1,21 +1,14 @@
-# hexo-theme-snippet
+# hexo-theme-xSnippet
+
+本主题魔改自 [shenliyang的 hexo-theme-snippet主题](https://github.com/shenliyang/hexo-theme-snippet)，主要修改了全局本色和顶部导航。
 
 Snippet 简洁而不简单，也许是一款你寻找已久 hexo 主题。
+如果本主题也是你喜欢的菜，请动动手指 [Star](https://github.com/windtraceQ/xSnippet/stargazers) 支持一下
 
-如果本主题也是你喜欢的菜，请动动手指 [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers) 支持一下
+[主题实例戳这里](https://reecho.dpdns.org/)
 
-[![Build Status](https://travis-ci.com/shenliyang/hexo-theme-snippet.svg?branch=develop)](https://travis-ci.com/shenliyang/hexo-theme-snippet)
-[![Read the Docs](https://img.shields.io/badge/docs-complete-brightgreen)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md)
-[![mnt-image](https://img.shields.io/maintenance/yes/2030.svg)](../../commits/master)
-[![codebeat badge](https://codebeat.co/badges/6ef2dcd2-af90-40e0-9628-ac689441f774)](https://codebeat.co/projects/github-com-shenliyang-hexo-theme-snippet-master)
-[![GitHub stars](https://img.shields.io/github/stars/shenliyang/hexo-theme-snippet.svg)](https://github.com/shenliyang/hexo-theme-snippet/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/shenliyang/hexo-theme-snippet.svg)](https://github.com/shenliyang/hexo-theme-snippet/network)
-[![hexo version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/LICENSE)
+主题说明大部分引用自hexo-theme-snippet，部分稍做调整：
 
-[主题 Demo 戳这里](http://shenliyang.github.io?rf=gh-demo)
-
-![hexo-theme-snippet](https://hexo-theme-snippet-1251680922.cos.ap-beijing.myqcloud.com/img/snippet-screenshots1000.jpg "Snippet主题")
 
 ## 主题特点
 
@@ -52,64 +45,22 @@ Snippet 简洁而不简单，也许是一款你寻找已久 hexo 主题。
 
 有两种方式获取本主题--下载 `*.zip` 文件和通过 `git`方式：
 
-1. 下载 [Snippet 主题](https://github.com/shenliyang/hexo-theme-snippet) 文件解压后放在 `themes` 目录下，和博客中的 landscape 为同级目录
+1. 下载 [xSnippet 主题](https://github.com/windtraceQ/xSnippet) 文件解压后放在 `themes` 目录下，和博客中的 landscape 为同级目录
 
 2. Git 方式，在 Hexo 根目录执行：
 
 ```bash
-git clone git://github.com/shenliyang/hexo-theme-snippet.git themes/hexo-theme-snippet
+git clone https://github.com/windtraceQ/xSnippet.git themes/hexo-theme-xsnippet
 ```
 
-### 3. 安装主题插件
+### 3. 部署主题
 
-因为 **hexo-theme-snippet** 使用了 `ejs` 模版引擎 、 `Less` CSS 预编译语言以及在官方插件的基础上
-进行功能的开发，以下为必装插件：
+- 部署到host，请请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html)
+- 部署到cloudflare pages请参考[cloudflare 官方教程](https://developers.cloudflare.com/pages/framework-guides/deploy-a-hexo-site/)
+- 部署到github page请baidu。
 
-```bash
-npm i hexo-renderer-ejs hexo-renderer-less hexo-deployer-git -S
-```
 
-### 4. 部署主题
-
-> 如果没有更改过主题源文件,也不需要代码优化可以跳过 1,2,3 步骤
-
-1. gulp 打包构建，拷贝主题目录下`package.json`文件到 Hexo 根目录下，然后安装项目的开发依赖。 [Gulp 入门指南](http://www.gulpjs.com.cn/docs/getting-started/)
-
-```bash
-npm i   //安装项目依赖
-```
-
-2. 在 Hexo 根目录下创建一个名为 gulpfile.js 的文件：
-
-```bash
-require('./themes/hexo-theme-snippet/gulpfile');
-```
-
-3. 运行 gulp：
-
-```bash
-gulp 或者 gulp default   //执行打包任务
-```
-
-4. 清空 hexo 静态文件和缓存，并重新生成
-
-```bash
-hexo clean && hexo g  //清空缓存并生成静态文件
-```
-
-5. 本地预览，确没有问题再进行发布
-
-```bash
-hexo s -p 4000 或者 hexo s  //启动本地服务默认
-```
-
-6. 当 gulp 执行完成，并提示 `please execute： hexo d` 时，可以进行发布
-
-```bash
-hexo d 或者 gulp deploy  //部署发布
-```
-
-### 5. 更新主题
+### 4. 更新主题
 
 主题可能会不定时优化和更新，更新主题代码：
 
@@ -481,34 +432,12 @@ hexo clean && hexo g && hexo s -p 4000
 
 监听 4000 端口，使用浏览器打开地址`http://localhost:4000`进行预览。
 
-# **其他**
-
-## 感谢
-
-在设计这款主题的时候参考了好多主题和博客的设计和创意，深表感谢！
-
-## 鼓励
-
-**如果觉得本主题还不错，您的支持和鼓励才是后续更新最大的动力，== 欢迎 [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==**
-
-![Stargazers over time](https://starchart.cc/shenliyang/hexo-theme-snippet.svg)
-
-## 宗旨
-
-主题宗旨：**致力主题简洁轻量，配置方便开箱即用**，该主题项目会持续维护和更新。
 
 ## 贡献
 
 接受各种形式的贡献，包括但不限于提交问题或需求，修复代码。
 欢迎大家提 Issue 或者 Pull Request。
 
-> Hexo 框架追求的是快速、简洁，高效。喜欢绚丽，添加各种功能，折腾的朋友，建议移步至：[wordpress 官网](https://cn.wordpress.org/)
-
-## 你不知道的提 Issues 技巧
-
-> 强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
-
-<b>\* 已阅读以上文章，并知晓，可以 </b> [提 Issues](https://github.com/shenliyang/hexo-theme-snippet/issues/new) 了。
 
 ## 常见问题
 
@@ -594,9 +523,6 @@ Hexo 官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matt
 - 增加 Gitalk 评论系统
 - 增加博客自动化部署结果实时推送到手机钉钉上，第一时间了解部署情况
 
-自动化部署结果通知示例：
-
-![自动化部署结果通知示例](https://s2.ax1x.com/2019/03/06/kvnejs.jpg)
 
 ## License
 
