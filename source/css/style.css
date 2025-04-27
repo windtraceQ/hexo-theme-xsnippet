@@ -256,16 +256,16 @@ pre {
   padding-top: 10px;
 }
 .main-header .main-header-box a.header-avatar img {
-  width: 90px;
-  height: 90px;
+  width: 183px;
+  height: 150px;
   max-width: 100%;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 .main-header .main-header-box a.header-avatar:hover {
   text-decoration: none;
 }
 .main-header .main-header-box .branding {
-  padding-top: 15px;
+  padding-top: 5px;
 }
 .main-header .main-header-box .branding h2 {
   font-family: "STXingkai", "KaiTi", "Microsoft YaHei", "SimSun", sans-serif;
@@ -296,7 +296,7 @@ pre {
 }
 /* main-navigation */
 .main-navigation {
-  /*text-align: center;*/
+  text-align: center;
   background: #171f26;
   /*border-top: 1px solid #ebebeb;*/
   margin-bottom: 20px;
